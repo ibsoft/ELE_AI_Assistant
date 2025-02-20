@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:gravity="start">
+
+    <!-- Bot message bubble -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bot_message"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bot message"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!-- Code Block with White Background and Rounded Corners -->
+        <LinearLayout
+            android:id="@+id/codeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_code_block"
+            android:padding="8dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- Copy Code Button -->
+        <ImageButton
+            android:id="@+id/buttonCopyCode"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_copy"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Copy Code"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/textTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp"
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:paddingTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Bot icon and action buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <!-- Icon for bot -->
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_assistant"
+            android:contentDescription="Assistant Icon" />
+
+        <ImageButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/buttonCopy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/ic_menu_copy"
+            android:scaleType="centerInside"
+            android:contentDescription="Copy"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageButton
+            android:id="@+id/buttonTTS"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_speaker"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Text to Speech" />
+
+        <ImageButton
+            android:id="@+id/buttonLike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_thumb_up"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Like" />
+
+        <ImageButton
+            android:id="@+id/buttonDislike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_thumb_down"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dislike" />
+
+        <!-- Response Time TextView -->
+        <TextView
+            android:id="@+id/textResponseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

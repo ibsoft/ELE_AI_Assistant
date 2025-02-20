@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <!-- Optionally declare a variable for an AssistantResponse -->
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textAssistantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant Name"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/textAssistantId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant ID"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonCopy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_copy"
+            android:scaleType="centerInside"
+            android:contentDescription="Copy ID"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete"
+            android:scaleType="centerInside"
+            android:contentDescription="Delete Assistant"
+            app:tint="@color/error_red"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+</layout>

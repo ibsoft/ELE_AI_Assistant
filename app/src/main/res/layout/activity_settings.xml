@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Custom User Prompt -->
+        <TextView
+            android:id="@+id/textPromptTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom User Prompt"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <EditText
+            android:id="@+id/editTextCustomPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your custom prompt" />
+        <Button
+            android:id="@+id/buttonSavePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Prompt"
+            android:layout_marginTop="8dp" />
+
+        <!-- API Configuration Section -->
+        <TextView
+            android:id="@+id/textApiConfigTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API Configuration"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editTextOpenaiApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OpenAI API Key" />
+        <EditText
+            android:id="@+id/editTextAssistantId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Assistant ID (optional)" />
+        <EditText
+            android:id="@+id/editTextVectorstoreId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vectorstore ID (optional)" />
+        <Button
+            android:id="@+id/buttonSaveApiConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save API Config"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/buttonResetApiConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset API Config"
+            android:layout_marginTop="8dp" />
+
+        <!-- Play Welcome Message Switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textPlayWelcomeMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Play welcome message"
+                android:layout_weight="1"
+                android:textAppearance="?attr/textAppearanceBody1" />
+            <Switch
+                android:id="@+id/switchPlayWelcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <!-- Clear Chat History -->
+        <Button
+            android:id="@+id/buttonClearHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Chat History"
+            android:layout_marginTop="16dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

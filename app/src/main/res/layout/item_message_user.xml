@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="end"
+    android:orientation="vertical">
+
+    <!-- User message bubble -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_user_message"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User message"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/textTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp"
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:paddingTop="4dp"/>
+    </LinearLayout>
+
+    <!-- User icon -->
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_user"
+        android:contentDescription="User Icon" />
+</LinearLayout>

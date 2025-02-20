@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- Optionally declare a variable for your VectorFile model -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <!-- File Name TextView -->
+        <TextView
+            android:id="@+id/textFileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textFileId"
+            android:layout_marginEnd="8dp" />
+
+        <!-- File ID TextView -->
+        <TextView
+            android:id="@+id/textFileId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File ID"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_delete"
+            android:scaleType="centerInside"
+            android:contentDescription="Delete File"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/error_red"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

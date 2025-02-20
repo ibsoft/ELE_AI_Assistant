@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_conversation_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ConversationListActivity">
+
+    <!-- Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:elevation="4dp" />
+
+
+    <!-- RecyclerView placed between the toolbar and the footer -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/footerLayout"
+        android:padding="8dp"
+        android:background="@color/recyclerBackgroundColor" />
+
+    <!-- Footer container for Likes/Dislikes and Copyright -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#3F51B5"
+        android:padding="8dp">
+
+        <!-- TextView to display aggregated likes and dislikes -->
+        <TextView
+            android:id="@+id/textLikesDislikes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Likes: 0  Dislikes: 0"
+            android:gravity="center" />
+
+        <!-- Copyright TextView -->
+        <TextView
+            android:id="@+id/textCopyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="© 2025 - ELE - AI Assistant - Created by InsBhrs"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- FloatingActionButton to add a new conversation, positioned above the footer -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/footerLayout"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/accentColor"
+        android:tint="@android:color/white"
+        android:contentDescription="Add Conversation" />
+
+</RelativeLayout>

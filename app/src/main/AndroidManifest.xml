@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ELE - AI Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AiChat">
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Conversation List -->
+        <activity android:name=".ConversationListActivity" />
+        <!-- Chat Conversation Screen -->
+        <activity android:name=".ChatActivity" />
+
+        <activity android:name=".VectorFilesActivity" />
+
+        <activity android:name=".AssistantsActivity" />
+
+        <activity android:name=".CreateAssistantActivity" />
+
+        <activity android:name=".VectorStoresActivity" />
+
+        <activity android:name=".CreateVectorStoreActivity" />
+
+        <activity android:name=".SettingsActivity" />
+
+        <activity android:name=".AboutActivity" />
+    </application>
+
+</manifest>

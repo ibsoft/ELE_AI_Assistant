@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <!-- Optionally declare a variable for VectorStoreResponse -->
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textStoreName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Store Name"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textStoreId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store ID"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonCopy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_copy"
+            android:scaleType="centerInside"
+            android:contentDescription="Copy Store ID"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/error_red"
+            android:scaleType="centerInside"
+            android:contentDescription="Delete Store"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+</layout>

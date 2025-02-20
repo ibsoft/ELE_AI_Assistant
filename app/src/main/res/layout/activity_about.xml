@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- If you use ViewBinding, no extra variables are required -->
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Credits Text -->
+            <TextView
+                android:id="@+id/textViewCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Software: ELE AI Assistant VERSION 1 (ONLY) IS LICENSED FOR FREE !!! - RE-BRANDING IS POSSIBLE AND LICENSE IS APPLIED - CONTACT DEVELOPER.\n"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <!-- New TextView for License Agreement -->
+            <TextView
+                android:id="@+id/textViewLicense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:text="Proprietary Software License Agreement\n
+\nIMPORTANT – READ CAREFULLY: This Proprietary Software License Agreement (&quot;Agreement&quot;) is a legal agreement between you (&quot;Licensee&quot;) and Ioannis A. Bouhras (&quot;Licensor&quot;) governing your use of the accompanying software and any related documentation (collectively, the &quot;Software&quot;). By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement. If you do not agree with the terms herein, do not install or use the Software.\n
+\n1. GRANT OF LICENSE\nLicensor hereby grants you a non-exclusive, non-transferable, revocable license to use the Software solely for your internal business purposes, subject to the terms and conditions of this Agreement.\n
+\n2. RESTRICTIONS\nYou agree that you will not:\n    a. Copy, modify, or create derivative works of the Software, except as expressly permitted under this Agreement.\n    b. Reverse engineer, decompile, or disassemble the Software.\n    c. Sell, rent, lease, sublicense, distribute, or otherwise transfer the Software to any third party without Licensor's prior written consent.\n    d. Remove or alter any copyright, trademark, or other proprietary notices contained in the Software.\n
+\n3. COPYRIGHT\nThe Software is owned by Licensor and is protected by copyright laws and international copyright treaties, as well as other intellectual property laws. The Software is licensed, not sold.\n
+\n4. TERMINATION\nThis Agreement is effective until terminated. Licensor may terminate this Agreement immediately if you breach any of its terms. Upon termination, you must cease all use of the Software and destroy all copies in your possession.\n
+\n5. WARRANTY DISCLAIMER\nTHE SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT ITS OPERATION WILL BE UNINTERRUPTED OR ERROR-FREE.\n
+\n6. LIMITATION OF LIABILITY\nIN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR USE, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n
+\n7. GOVERNING LAW\nThis Agreement shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of laws principles.\n
+\n8. ENTIRE AGREEMENT\nThis Agreement constitutes the entire agreement between you and Licensor regarding the Software and supersedes any prior understandings or agreements, whether written or oral, regarding the subject matter hereof.\n
+\nBy installing or using the Software, you acknowledge that you have read this Agreement, understand it, and agree to be bound by its terms." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

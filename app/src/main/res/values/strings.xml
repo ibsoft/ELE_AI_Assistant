@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">U4Assistant</string>
+    <string name="copy">Copy</string>
+    <string name="text_to_speech">Text to Speech</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string-array name="assistant_tools">
+        <item>file_search</item>
+        <item>code_interpreter</item>
+    </string-array>
+</resources>
